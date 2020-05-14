@@ -1,2 +1,2 @@
 # CatCafeProject
-school collab, cat cafe project
+school collab, safe cat cafe project
