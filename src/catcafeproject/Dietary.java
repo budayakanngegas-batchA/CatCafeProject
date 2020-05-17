@@ -5,8 +5,6 @@
  */
 package catcafeproject;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author raygh

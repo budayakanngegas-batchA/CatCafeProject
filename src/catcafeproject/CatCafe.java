@@ -23,6 +23,10 @@ public class CatCafe {
     public static void main(String[] args) {
 
         // initializations //
+        
+        // for some reason, i can't put it outside main //
+        // it has to be from a static context //
+        // funny, time is non static in the first place //
         Date date = new Date();
         Timestamp timestamp = new Timestamp(date.getTime());
         String time = timestamp.toString();
