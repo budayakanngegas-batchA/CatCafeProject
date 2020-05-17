@@ -13,21 +13,24 @@ import java.util.ArrayList;
  */
 public class Dietary {
     private String catFoodName;
-    private ArrayList feedingTime;
+    private String feedingTime;
     
      // get
     public String getCatFoodName() {
         return catFoodName;
     }
-    public ArrayList getFeedingTime() {
+    public String getFeedingTime() {
         return feedingTime;
+    }
+    public String getDietData() {
+        return "[food name: "+catFoodName+", feeding time: "+feedingTime+"]";
     }
 
     // set
     public void setCatFoodName(String catFoodName) {
         this.catFoodName = catFoodName;
     }
-    public void setFeedingTime(ArrayList feedingTime) {
+    public void setFeedingTime(String feedingTime) {
         this.feedingTime = feedingTime;
     }
     
@@ -35,7 +38,7 @@ public class Dietary {
     public Dietary(){
     }
 
-    public Dietary(String a , ArrayList b){
+    public Dietary(String a , String b){
         this.catFoodName = a;
         this.feedingTime = b;
     }
