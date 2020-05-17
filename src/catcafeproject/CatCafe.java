@@ -18,14 +18,39 @@ public class CatCafe {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Date dt = new Date();
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Menu:");
-        System.out.println("1.Add Cat");
-        System.out.println("2.Edit Cat");
-        System.out.println("3.Remove Cat");
-        System.out.println("4.View Cat Data");
+        // Unused for now
+        // Date dt = new Date();
+
+        // CMD Bootleg 1.0 by Davey
+        // Initial Creation
+        Scanner scanner = new Scanner(System.in);
+        String command = "help";
+
+        // Commands
+        while (true) {
+            switch (command) {
+                // wrong command output //
+                default:
+                    System.out.println("Unknown command.");
+                    System.out.println("Refer to 'help' for list of commands.");
+                    break;
+                // shows all commands //   
+                case "help":
+                    System.out.println("help: Show all commands.");
+                    System.out.println("credits: Show credits.");
+                    System.out.println("1. Add Cat");
+                    System.out.println("2. Edit Cat");
+                    System.out.println("3. Remove Cat");
+                    System.out.println("4. View Cat Data");
+                    break;
+                // maybe i should credit stack overflow too //
+                case "credits":
+                    System.out.println("Cat Cafe");
+                    System.out.println("by: Davey, Ray, Hanwin, Rex, Wira");
+                    break;
+            }
+            System.out.print("Command: ");
+            command = scanner.nextLine();
+        }
     }
-    
 }
