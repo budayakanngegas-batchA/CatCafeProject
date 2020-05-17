@@ -26,6 +26,7 @@ public class CatCafe {
      
      Cat c1 = new Cat("C1T3R","Nigga",time);
      c1.setCatDiet(f1);
+     c1.setCatDiet(f2);
      c1.setCatDiet(f3);
      
      System.out.println(c1.toString());
