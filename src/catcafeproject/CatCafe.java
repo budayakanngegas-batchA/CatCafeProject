@@ -5,6 +5,8 @@
  */
 package catcafeproject;
 
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -14,11 +16,16 @@ import java.util.Scanner;
  */
 public class CatCafe {
 
+    // initialize ArrayList to contain cats and dietaries //
+    private static final ArrayList<Cat> catList = new ArrayList();
+    private static final ArrayList<Dietary> dietList = new ArrayList();
+
     public static void main(String[] args) {
+
         // initializations //
-        String time;
         Date date = new Date();
-        time = date.toString();
+        Timestamp timestamp = new Timestamp(date.getTime());
+        String time = timestamp.toString();
 
         Dietary f1 = new Dietary("whiskas", "10:00");
         Dietary f2 = new Dietary("catnip", "17:00");
@@ -31,7 +38,7 @@ public class CatCafe {
 
         System.out.println(c1.toString());
         c1.printFeedingSchedule();
-        
+
         // CMD Bootleg 1.0 by Davey //
         // Initial Creation //
         Scanner scanner = new Scanner(System.in);
