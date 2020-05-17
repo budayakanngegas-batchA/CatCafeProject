@@ -33,4 +33,16 @@ public class Cat {
     public void setCatspecies(String theCatSpecies){
         this.catSpecies = theCatSpecies;
     }
+    
+    public ArrayList getCatDiet(){
+        return catDiet;
+    }
+    
+    public void setCatDiet(ArrayList theCatDiet){
+        this.catDiet = theCatDiet;
+    }
+    
+    public Date getLastTimeFed(){
+        return lastTimeFeed;
+    }
 }
