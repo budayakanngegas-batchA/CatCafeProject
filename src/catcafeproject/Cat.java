@@ -18,31 +18,49 @@ public class Cat {
     private ArrayList catDiet;
     private Date lastTimeFeed;
     
+    //Get
     public String getCatName(){
         return catName;
-    }
-    
-    public void setCatName(String theCatName){
-        this.catName = theCatName;
     }
     
     public String getCatSpecies(){
         return catSpecies;
     }
     
-    public void setCatspecies(String theCatSpecies){
-        this.catSpecies = theCatSpecies;
-    }
-    
     public ArrayList getCatDiet(){
         return catDiet;
+    }
+    
+    public Date getLastTimeFed(){
+        return lastTimeFeed;
+    }
+    //Set
+    public void setCatName(String theCatName){
+        this.catName = theCatName;
+    }
+    
+    public void setCatspecies(String theCatSpecies){
+        this.catSpecies = theCatSpecies;
     }
     
     public void setCatDiet(ArrayList theCatDiet){
         this.catDiet = theCatDiet;
     }
     
-    public Date getLastTimeFed(){
-        return lastTimeFeed;
+    //Constructor
+    public Cat(){
     }
+
+    public Cat(String a , String b , ArrayList c , Date d){
+        this.catName = a;
+        this.catSpecies = b;
+        this.catDiet = c;
+        this.lastTimeFeed = d;
+    }
+    
+   
+    
+    
+    
+   
 }
