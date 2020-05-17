@@ -7,6 +7,7 @@ package catcafeproject;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.ListIterator;
 
 /**
  *
@@ -15,8 +16,9 @@ import java.util.Date;
 public class Cat {
     private String catName;
     private String catSpecies;
-    private ArrayList catDiet;
-    private Date lastTimeFeed;
+    private ArrayList<Dietary> catDiet;
+    private String lastTimeFeed;
+    private ListIterator<Dietary> dietListItr = null;
     
     //Get
     public String getCatName(){
@@ -31,7 +33,7 @@ public class Cat {
         return catDiet;
     }
     
-    public Date getLastTimeFed(){
+    public String getLastTimeFed(){
         return lastTimeFeed;
     }
     //Set
@@ -43,18 +45,31 @@ public class Cat {
         this.catSpecies = theCatSpecies;
     }
     
-    public void setCatDiet(ArrayList theCatDiet){
-        this.catDiet = theCatDiet;
+    public void setCatDiet(Dietary theCatDiet){
+        catDiet.add(theCatDiet);
     }
-    
+    //List Iterator
+     public void printFeedingSchedule(){
+        dietListItr = catDiet.listIterator();
+            while (dietListItr.hasNext()){
+                System.out.println(dietListItr.next().getDietData());
+            }
+    }
+     
+     
     //Constructor
     public Cat(){
     }
 
-    public Cat(String a , String b , ArrayList c , Date d){
+    public Cat(String a , String b , String c){
         this.catName = a;
         this.catSpecies = b;
-        this.catDiet = c;
-        this.lastTimeFeed = d;
+        this.lastTimeFeed = c;
+        catDiet = new ArrayList<>();
+    }
+    
+    @Override
+    public String toString(){
+        return "Name: "+catName+", Type: "+catSpecies+", Last time fed: "+lastTimeFeed;            
     }
 }
