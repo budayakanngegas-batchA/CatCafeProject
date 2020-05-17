@@ -5,10 +5,13 @@
  */
 package catcafeproject;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author raygh
  */
 public class Dietary {
-    
+    private String catFoodName;
+    private ArrayList feedingTime;
 }
