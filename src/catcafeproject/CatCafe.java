@@ -9,7 +9,7 @@ package catcafeproject;
  *
  * @author Crestfall
  */
-public class MainClass {
+public class CatCafe {
 
     /**
      * @param args the command line arguments
