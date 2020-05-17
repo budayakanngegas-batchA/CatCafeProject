@@ -13,6 +13,7 @@ import java.util.ListIterator;
  * @author raygh
  */
 public class Cat {
+    
     private String catName;
     private String catSpecies;
     private ArrayList<Dietary> catDiet;

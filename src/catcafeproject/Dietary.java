@@ -10,10 +10,11 @@ package catcafeproject;
  * @author raygh
  */
 public class Dietary {
+    
     private String catFoodName;
     private String feedingTime;
     
-     // get
+    // get
     public String getCatFoodName() {
         return catFoodName;
     }
