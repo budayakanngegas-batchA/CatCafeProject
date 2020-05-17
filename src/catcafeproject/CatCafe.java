@@ -14,9 +14,6 @@ import java.util.Scanner;
  */
 public class CatCafe {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // initializations //
         String time;
@@ -52,10 +49,10 @@ public class CatCafe {
                 case "help":
                     System.out.println("help: Show all commands.");
                     System.out.println("credits: Show credits.");
-                    System.out.println("1. Add Cat");
-                    System.out.println("2. Edit Cat");
-                    System.out.println("3. Remove Cat");
-                    System.out.println("4. View Cat Data");
+                    System.out.println("cat_add: Add a new cat.");
+                    System.out.println("cat_edit: Edit a cat's data.");
+                    System.out.println("cat_del: Delete a cat.");
+                    System.out.println("cat_list: Show a cat's data.");
                     break;
                 // maybe i should credit stack overflow too //
                 case "credits":
