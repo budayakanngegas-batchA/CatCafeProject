@@ -57,10 +57,4 @@ public class Cat {
         this.catDiet = c;
         this.lastTimeFeed = d;
     }
-    
-   
-    
-    
-    
-   
 }
