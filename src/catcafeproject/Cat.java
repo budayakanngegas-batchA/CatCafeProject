@@ -40,7 +40,7 @@ public class Cat {
         catName = name;
     }
 
-    public void setCatspecies(String species) {
+    public void setCatSpecies(String species) {
         catSpecies = species;
     }
 
