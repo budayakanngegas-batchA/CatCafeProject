@@ -32,7 +32,6 @@ public class Dietary {
     public void setFeedingTime(String feedingTime) {
         this.feedingTime = feedingTime;
     }
-   
     
      // constructor
     public Dietary(){

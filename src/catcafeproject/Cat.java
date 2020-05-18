@@ -24,11 +24,9 @@ public class Cat {
     public String getCatName(){
         return catName;
     }
-    
     public String getCatSpecies(){
         return catSpecies;
     }
-    
     public ArrayList getCatDiet(){
         return catDiet;
     }
@@ -36,18 +34,18 @@ public class Cat {
     public String getLastTimeFed(){
         return lastTimeFeed;
     }
+    
     //Set
     public void setCatName(String theCatName){
         this.catName = theCatName;
     }
-    
     public void setCatspecies(String theCatSpecies){
         this.catSpecies = theCatSpecies;
     }
-    
     public void setCatDiet(Dietary theCatDiet){
         catDiet.add(theCatDiet);
     }
+    
     //List Iterator
      public void printFeedingSchedule(){
         dietListItr = catDiet.listIterator();
@@ -55,7 +53,6 @@ public class Cat {
                 System.out.println(dietListItr.next().getDietData());
             }
     }
-     
      
     //Constructor
     public Cat(){

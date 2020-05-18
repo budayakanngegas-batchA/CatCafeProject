@@ -16,8 +16,6 @@ import java.util.Scanner;
  */
 public class CatCafe {
     
-    int a;
-
     // initialize ArrayList to contain cats and dietaries //
     private static final ArrayList<Cat> catList = new ArrayList();
     private static final ArrayList<Dietary> dietList = new ArrayList();
@@ -62,7 +60,6 @@ public class CatCafe {
         String catName,catSpecies;
 
         // Commands
-        
         while (!finish) {
             switch (command) {
                 //Command Input
