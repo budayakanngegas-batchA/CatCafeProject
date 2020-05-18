@@ -18,11 +18,10 @@ public class CatCafe {
 
     // initialize ArrayList to contain cats and dietaries //
     private static final ArrayList<Cat> catList = new ArrayList();
-    private static final ArrayList<Dietary> dietList = new ArrayList();
 
     // main class methods //
     public static void selectCat(int i) {
-        System.out.format("%3d%20s%20s%20s\n", i, catList.get(i).getCatName(), catList.get(i).getCatSpecies(), catList.get(i).getLastTimeFed());
+        System.out.format("%3d%20s%20s%40s\n", i, catList.get(i).getCatName(), catList.get(i).getCatSpecies(), catList.get(i).getLastTimeFed());
     }
 
     public static void addCat(String name, String species, String lastTimeFeed) {
@@ -32,7 +31,7 @@ public class CatCafe {
     }
 
     public static void listCat() {
-        System.out.format("%3s%20s%20s%20s\n", "id", "name", "species", "lasttimefed");
+        System.out.format("%3s%20s%20s%40s\n", "id", "name", "species", "lasttimefed");
         for (int i = 0; i < catList.size(); i++) {
             selectCat(i);
         }
@@ -86,13 +85,13 @@ public class CatCafe {
                     System.out.println(date.toString());
 
                     time = date.toString();
-                    Cat c2 = new Cat(catName, catSpecies, time);
-                    catList.add(c2);
+                    addCat(catName, catSpecies, time);
                     break;
                 case "2":
                 case "3":
                 case "4":
-
+                    listCat();
+                    break;
                 // shows all commands //   
                 case "5":
                     System.out.println("Menu:");
