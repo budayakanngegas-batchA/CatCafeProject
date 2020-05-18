@@ -45,19 +45,41 @@ public class CatCafe {
 
         // CMD Bootleg 1.0 by Davey //
         // Initial Creation //
+        System.out.println("Menu:");
+        System.out.println("1.Add Cat");
+        System.out.println("2.Edit Cat");
+        System.out.println("3.Remove Cat");
+        System.out.println("4.List of Cats");
+        System.out.println("5.Help");
+        System.out.println("6.Credits");
+        
+        
         Scanner scanner = new Scanner(System.in);
         String command = "help";
+        boolean finish = false;
+        String catName,catSpecies;
 
         // Commands
-        while (true) {
+        
+        while (!finish) {
             switch (command) {
-                // wrong command output //
-                default:
-                    System.out.println("Unknown command.");
-                    System.out.println("Refer to 'help' for list of commands.");
+                //Command Input
+                case "1":
+                    System.out.println("Enter the Name !");
+                    catName=scanner.nextLine();
+                    System.out.println("Enter the Plate ! ");
+                    catSpecies=scanner.nextLine();
+                    System.out.println(date.toString());
+                    time = date.toString();
+                    Cat c2 = new Cat(catName,catSpecies,time);
+                    catList.add(c2);
                     break;
+                case "2":
+                case "3":
+                case "4":
+                    
                 // shows all commands //   
-                case "help":
+                case "5":
                     System.out.println("help: Show all commands.");
                     System.out.println("credits: Show credits.");
                     System.out.println("cat_add: Add a new cat.");
@@ -66,7 +88,7 @@ public class CatCafe {
                     System.out.println("cat_list: Show a cat's data.");
                     break;
                 // maybe i should credit stack overflow too //
-                case "credits":
+                case "6":
                     System.out.println("Cat Cafe");
                     System.out.println("by: Davey, Ray, Hanwin, Rex, Wira");
                     break;
