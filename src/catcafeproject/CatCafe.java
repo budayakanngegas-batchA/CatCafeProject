@@ -69,9 +69,6 @@ public class CatCafe {
                     System.out.print("Species: ");
                     catSpecies = scanner.nextLine();
 
-                    System.out.println(date.toString());
-
-                    time = date.toString();
                     addCat(catName, catSpecies, time);
                     break;
                 case "2":
