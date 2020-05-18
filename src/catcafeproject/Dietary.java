@@ -10,26 +10,26 @@ package catcafeproject;
  * @author raygh
  */
 public class Dietary {
-    private String catFoodName;
-    private String feedingTime;
+    private String dietName;
+    private String dietTime;
     
      // get
-    public String getCatFoodName() {
-        return catFoodName;
+    public String getDietName() {
+        return dietName;
     }
-    public String getFeedingTime() {
-        return feedingTime;
+    public String getDietTime() {
+        return dietTime;
     }
     public String getDietData() {
-        return "[food name: "+catFoodName+", feeding time: "+feedingTime+"]";
+        return "[food name: "+dietName+", feeding time: "+dietTime+"]";
     }
 
     // set
-    public void setCatFoodName(String catFoodName) {
-        this.catFoodName = catFoodName;
+    public void setDietName(String name) {
+        dietName = name;
     }
-    public void setFeedingTime(String feedingTime) {
-        this.feedingTime = feedingTime;
+    public void setDietTime(String time) {
+        dietTime = time;
     }
    
     
@@ -37,8 +37,8 @@ public class Dietary {
     public Dietary(){
     }
 
-    public Dietary(String a , String b){
-        this.catFoodName = a;
-        this.feedingTime = b;
+    public Dietary(String name , String time){
+        dietName = name;
+        dietTime = time;
     }
 }

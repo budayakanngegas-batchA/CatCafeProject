@@ -41,7 +41,7 @@ public class CatCafe {
         c1.setCatDiet(f3);
 
         System.out.println(c1.toString());
-        c1.printFeedingSchedule();
+        // c1.printFeedingSchedule();
 
         // CMD Bootleg 1.0 by Davey //
         // Initial Creation //

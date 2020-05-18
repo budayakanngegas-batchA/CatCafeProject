@@ -13,11 +13,10 @@ import java.util.ListIterator;
  * @author raygh
  */
 public class Cat {
-    private String catName;
-    private String catSpecies;
+    private String catName = "Cat";
+    private String catSpecies = "Feline";
     private ArrayList<Dietary> catDiet;
-    private String lastTimeFeed;
-    private ListIterator<Dietary> dietListItr = null;
+    private String catLastTimeFeed;
     
     //Get
     public String getCatName(){
@@ -33,42 +32,34 @@ public class Cat {
     }
     
     public String getLastTimeFed(){
-        return lastTimeFeed;
+        return catLastTimeFeed;
     }
     //Set
-    public void setCatName(String theCatName){
-        this.catName = theCatName;
+    public void setCatName(String name){
+        catName = name;
     }
     
-    public void setCatspecies(String theCatSpecies){
-        this.catSpecies = theCatSpecies;
+    public void setCatspecies(String species){
+        catSpecies = species;
     }
     
-    public void setCatDiet(Dietary theCatDiet){
-        catDiet.add(theCatDiet);
+    public void setCatDiet(Dietary diet){
+        catDiet.add(diet);
     }
-    //List Iterator
-     public void printFeedingSchedule(){
-        dietListItr = catDiet.listIterator();
-            while (dietListItr.hasNext()){
-                System.out.println(dietListItr.next().getDietData());
-            }
-    }
-     
      
     //Constructor
     public Cat(){
     }
 
-    public Cat(String a , String b , String c){
-        this.catName = a;
-        this.catSpecies = b;
-        this.lastTimeFeed = c;
+    public Cat(String name , String species , String lastTimeFeed){
+        catName = name;
+        catSpecies = species;
+        catLastTimeFeed = lastTimeFeed;
         catDiet = new ArrayList<>();
     }
     
     @Override
     public String toString(){
-        return "Name: "+catName+", Type: "+catSpecies+", Last time fed: "+lastTimeFeed;            
+        return "Name: "+catName+", Type: "+catSpecies+", Last time fed: "+catLastTimeFeed;            
     }
 }
