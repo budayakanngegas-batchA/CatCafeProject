@@ -23,7 +23,6 @@ public class CatCafe {
     public static void main(String[] args) {
 
         // initializations //
-        
         // for some reason, i can't put it outside main //
         // it has to be from a static context //
         // funny, time is non static in the first place //
@@ -52,32 +51,30 @@ public class CatCafe {
         System.out.println("4.List of Cats");
         System.out.println("5.Help");
         System.out.println("6.Credits");
-        
-        
+
         Scanner scanner = new Scanner(System.in);
         String command = "help";
         boolean finish = false;
-        String catName,catSpecies;
+        String catName, catSpecies;
 
         // Commands
-        
         while (!finish) {
             switch (command) {
                 //Command Input
                 case "1":
                     System.out.println("Enter the Name !");
-                    catName=scanner.nextLine();
+                    catName = scanner.nextLine();
                     System.out.println("Enter the Plate ! ");
-                    catSpecies=scanner.nextLine();
+                    catSpecies = scanner.nextLine();
                     System.out.println(date.toString());
                     time = date.toString();
-                    Cat c2 = new Cat(catName,catSpecies,time);
+                    Cat c2 = new Cat(catName, catSpecies, time);
                     catList.add(c2);
                     break;
                 case "2":
                 case "3":
                 case "4":
-                    
+
                 // shows all commands //   
                 case "5":
                     System.out.println("help: Show all commands.");

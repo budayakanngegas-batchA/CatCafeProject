@@ -6,60 +6,61 @@
 package catcafeproject;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 /**
  *
  * @author raygh
  */
 public class Cat {
+
     private String catName = "Cat";
     private String catSpecies = "Feline";
     private ArrayList<Dietary> catDiet;
     private String catLastTimeFeed;
-    
+
     //Get
-    public String getCatName(){
+    public String getCatName() {
         return catName;
     }
-    
-    public String getCatSpecies(){
+
+    public String getCatSpecies() {
         return catSpecies;
     }
-    
-    public ArrayList getCatDiet(){
+
+    public ArrayList getCatDiet() {
         return catDiet;
     }
-    
-    public String getLastTimeFed(){
+
+    public String getLastTimeFed() {
         return catLastTimeFeed;
     }
+
     //Set
-    public void setCatName(String name){
+    public void setCatName(String name) {
         catName = name;
     }
-    
-    public void setCatspecies(String species){
+
+    public void setCatspecies(String species) {
         catSpecies = species;
     }
-    
-    public void setCatDiet(Dietary diet){
+
+    public void setCatDiet(Dietary diet) {
         catDiet.add(diet);
     }
-     
+
     //Constructor
-    public Cat(){
+    public Cat() {
     }
 
-    public Cat(String name , String species , String lastTimeFeed){
+    public Cat(String name, String species, String lastTimeFeed) {
         catName = name;
         catSpecies = species;
         catLastTimeFeed = lastTimeFeed;
         catDiet = new ArrayList<>();
     }
-    
+
     @Override
-    public String toString(){
-        return "Name: "+catName+", Type: "+catSpecies+", Last time fed: "+catLastTimeFeed;            
+    public String toString() {
+        return "Name: " + catName + ", Type: " + catSpecies + ", Last time fed: " + catLastTimeFeed;
     }
 }

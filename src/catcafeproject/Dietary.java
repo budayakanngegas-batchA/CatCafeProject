@@ -10,34 +10,37 @@ package catcafeproject;
  * @author raygh
  */
 public class Dietary {
+
     private String dietName;
     private String dietTime;
-    
-     // get
+
+    // get
     public String getDietName() {
         return dietName;
     }
+
     public String getDietTime() {
         return dietTime;
     }
+
     public String getDietData() {
-        return "[food name: "+dietName+", feeding time: "+dietTime+"]";
+        return "[food name: " + dietName + ", feeding time: " + dietTime + "]";
     }
 
     // set
     public void setDietName(String name) {
         dietName = name;
     }
+
     public void setDietTime(String time) {
         dietTime = time;
     }
-   
-    
-     // constructor
-    public Dietary(){
+
+    // constructor
+    public Dietary() {
     }
 
-    public Dietary(String name , String time){
+    public Dietary(String name, String time) {
         dietName = name;
         dietTime = time;
     }
