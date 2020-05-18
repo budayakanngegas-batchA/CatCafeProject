@@ -15,6 +15,8 @@ import java.util.Scanner;
  * @author Crestfall
  */
 public class CatCafe {
+    
+    int a;
 
     // initialize ArrayList to contain cats and dietaries //
     private static final ArrayList<Cat> catList = new ArrayList();
